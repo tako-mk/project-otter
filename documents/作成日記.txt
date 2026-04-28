@@ -1,0 +1,12 @@
+04/21
+    FastAPIでプロジェクト作成
+    仮想環境の構築
+
+    PS C:\Users\鈴木崇矢\OneDrive\ドキュメント\03_PROG\project-otter> python -m venv venv
+    PS C:\Users\鈴木崇矢\OneDrive\ドキュメント\03_PROG\project-otter> Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+    PS C:\Users\鈴木崇矢\OneDrive\ドキュメント\03_PROG\project-otter> venv\Scripts\activate           
+    (venv) PS C:\Users\鈴木崇矢\OneDrive\ドキュメント\03_PROG\project-otter> pip install fastapi uvicorn  
+
+04/28
+
+    pip install sqlalchemy psycopg2-binary

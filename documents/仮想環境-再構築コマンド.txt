@@ -1,0 +1,4 @@
+仮想環境の有効化とサーバー起動
+
+venv\Scripts\activate
+python -m uvicorn app.main:app --reload
