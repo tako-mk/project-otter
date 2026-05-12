@@ -9,6 +9,7 @@
 
 04/28
     studentサーバーにて環境構築
+    一旦sqliteで作って後でpostgresにする
 
     pip install sqlalchemy
 
