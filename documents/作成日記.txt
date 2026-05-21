@@ -22,3 +22,5 @@
     ライブラリをインストールすることができた
 
     pip install fastapi uvicorn sqlalchemy
+
+05/21
