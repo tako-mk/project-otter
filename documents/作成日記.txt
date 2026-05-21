@@ -2,9 +2,9 @@
     FastAPIでプロジェクト作成
     仮想環境の構築
 
-    python -m venv venv
-    Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-    venv\Scripts\activate           
+    python3 -m venv venv
+    Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass 
+    source venv\Scripts\activate           
     pip install fastapi uvicorn  
 
 04/28
@@ -13,3 +13,12 @@
 
     pip install sqlalchemy
 
+05/12
+    lukeにてライブラリインストールに苦戦
+    pipのバージョンが古いようでうまくいかなかった
+    アップデートをしようといろいろな方法を試したが
+    proxyにひっかかって上手く行かなかった
+    最終的にget-pip.pyをdlして実行することで強制的にpipを新しくし、
+    ライブラリをインストールすることができた
+
+    pip install fastapi uvicorn sqlalchemy
