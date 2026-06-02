@@ -34,3 +34,5 @@
     database.pyでデータベースの初期設定
     models/user.pyでユーザーテーブルの構造
     schemas/user.pyでapiが受け取る側のデータを設定
+    
+    routers/auth.pyでユーザ認証apiを作成することにする
