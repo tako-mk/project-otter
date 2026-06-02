@@ -4,7 +4,7 @@
 
     python3 -m venv venv
     Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass 
-    source venv\Scripts\activate           
+    source venv/bin/activate           
     pip install fastapi uvicorn  
 
 04/28
@@ -23,4 +23,14 @@
 
     pip install fastapi uvicorn sqlalchemy
 
-05/21
+06/02
+    仮にsqliteでプロジェクト直下にdata/app.dbを作成
+    仮想環境で uvicorn app.main:app --reloadを実行し
+    ローカルホストで動いていることを確認した
+    sqlalchemyはpython上で動くsqlライブラリ
+    SQLiteやPostgresのそれぞれの違いを吸収できる
+    
+    main.pyでfastapi起動
+    database.pyでデータベースの初期設定
+    models/user.pyでユーザーテーブルの構造
+    schemas/user.pyでapiが受け取る側のデータを設定

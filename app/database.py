@@ -1,15 +1,17 @@
 from sqlalchemy import create_engine
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import declarative_base, sessionmaker
 
-DATABASE_URL = "postgresql://ユーザー名:パスワード@localhost/DB名"
+DATABASE_URL = "sqlite:///./data/app.db" # dbの位置
 
-engine = create_engine(DATABASE_URL)
+engine = create_engine(     # DB接続のための設定
+    DATABASE_URL,
+    connect_args={"check_same_thread": False}
+)
 
-SessionLocal = sessionmaker(
+SessionLocal = sessionmaker(    # DB操作メソッド
     autocommit=False,
     autoflush=False,
     bind=engine
 )
 
-Base = declarative_base()
+Base = declarative_base()   # テーブルの親クラス
