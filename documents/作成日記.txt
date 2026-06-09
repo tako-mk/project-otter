@@ -36,3 +36,12 @@
     schemas/user.pyでapiが受け取る側のデータを設定
     
     routers/auth.pyでユーザ認証apiを作成することにする
+
+06/09
+    fastapiでユーザー登録(DB保存)ができたことを確認
+    app/data/app.dbに保存できている
+
+    パスワードのハッシュ化を行う
+    passlibとbcryptでパスワードのハッシュに成功
+    ログイン処理も作成、データベースからメアドを探し
+    パスワードの認証はverifyの関数を用いる
