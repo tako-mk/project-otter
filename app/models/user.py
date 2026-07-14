@@ -21,3 +21,9 @@ class User(Base):
     password_hash: Mapped[str] = mapped_column(
         String(255),
     )
+
+    # user_type タイプ teacherかstudent
+    user_type: Mapped[str] = mapped_column(
+        String(50),
+        default="students"
+    ) 
