@@ -6,7 +6,10 @@ class User(Base):
     __tablename__ = "users"
 
     # id 主キー 
-    id: Mapped[int] = mapped_column(primary_key=True)
+    id: Mapped[int] = mapped_column(
+        primary_key=True,
+        autoincrement=True
+    )
 
     # username ユーザーネーム
     username: Mapped[str] = mapped_column(String(50))
